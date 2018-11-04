@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3764978D-8D0A-4C48-B61F-2352A9021CFD}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Codility</RootNamespace>
-    <AssemblyName>Codility</AssemblyName>
+    <ProjectGuid>{E0EF7193-A0E8-4413-BAB3-1602DD3C69A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cantaloupe.two</RootNamespace>
+    <AssemblyName>Cantaloupe.two</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,23 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="SolutionIter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cantaloupe.three\Cantaloupe.three.csproj">
-      <Project>{ecf86c2e-624d-4bb9-a774-fdf0e0ba1250}</Project>
-      <Name>Cantaloupe.three</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Cantaloupe.two\Cantaloupe.two.csproj">
-      <Project>{e0ef7193-a0e8-4413-bab3-1602dd3c69a8}</Project>
-      <Name>Cantaloupe.two</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ISolution\Solution.csproj">
-      <Project>{2607d6e6-6c37-46c0-849c-85fa13835018}</Project>
+      <Project>{2607D6E6-6C37-46C0-849C-85FA13835018}</Project>
       <Name>Solution</Name>
     </ProjectReference>
   </ItemGroup>
